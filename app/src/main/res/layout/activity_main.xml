@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/homebackground">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/logo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/UserPic"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_account_circle"
+        android:layout_toLeftOf="@+id/UserName"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/darker_gray"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+    <RelativeLayout
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/QR_Code"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rlshape">
+
+            <ImageView
+                android:id="@+id/qrcodelogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/qrcode" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qrcodelogo"
+                android:layout_centerHorizontal="true"
+                android:text="QR Code"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/QR_Scan"
+            android:layout_marginTop="40dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@+id/QR_Code"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rlshape">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/qrscanlogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/qrscan"
+                />
+            <TextView
+                android:layout_below="@id/qrscanlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="QR Scanner"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Photo"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/QR_Code"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/rlshape">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/photologo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/homephoto"
+                />
+            <TextView
+                android:layout_below="@id/photologo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Photo"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Dashboard"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@+id/QR_Code"
+            android:layout_below="@+id/QR_Scan"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rlshape">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/dashboardlogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dashboard1"
+                />
+            <TextView
+                android:layout_below="@id/dashboardlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Feedback"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/Photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/rlshape">
+
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/feedbackhome"
+                />
+            <TextView
+                android:layout_below="@id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="FEEDBACK"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Setting"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@+id/QR_Code"
+            android:layout_below="@+id/Dashboard"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rlshape">
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/setting"
+                />
+
+            <TextView
+                android:layout_below="@id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SETTINGS"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

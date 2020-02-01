@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/qrbgscr">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text1"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text1"
+        android:id="@+id/calendarView"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:layout_marginEnd="28dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="@android:color/transparent"
+        app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
+        app:compactCalendarTextColor="#000"
+        app:compactCalendarCurrentDayBackgroundColor="#03A9F4"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#e57373"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/textcolor"
+        android:layout_below="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Garbage Taken"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00FF00"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textcolor"
+        android:text="Garbage Not Taken"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"/>
+</RelativeLayout>

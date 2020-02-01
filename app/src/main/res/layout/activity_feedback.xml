@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:background="@drawable/qrbgscr">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/ClickMe"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/feedbacktext"
+        android:textSize="20dp"
+        android:textColor="#F50A0A"/>
+
+    <TextView
+        android:id="@+id/Verify_Textview3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:paddingLeft="30dp"
+        android:text="@string/thank_you_team_dyco"
+        android:textSize="20dp"
+        android:linksClickable="true"
+        />
+
+</RelativeLayout>
